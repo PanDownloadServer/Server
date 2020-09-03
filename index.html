@@ -18,7 +18,7 @@
     <script src="https://cdn.jsdelivr.net/gh/PanDownloadServer/Server/bundles/main.vraODx5hYf-DdzL9Ux5Z6Kmv9go-Dd1ofX_oEDjA4wRs.js"></script>
   </head>
   
-  <body onload="if (screen && screen.width > 480) { InitLive2D() }   if(! /Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)){InitLive2D() }">
+  <body onload="if (screen.width > 720 && !/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) { InitLive2D() }">
     <div class="header">
       <main class="cd-main-content">
         <div class="container">
@@ -124,10 +124,7 @@
     <div>
       <canvas id="mycanvas" width="300" height="486" style="position:fixed; bottom:0; right:0; z-index:999;"></canvas>
     </div>
-    <script type="text/javascript">if (screen && screen.width > 480) {
-        document.write('<script type="text/javascript" charset="utf-8" src="https://cdn.jsdelivr.net/gh/PanDownloadServer/Server/Scripts/live2d.min.js"><\/script>')
-      }
-      if (!/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+    <script type="text/javascript">if (screen.width > 720 && !/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
         document.write('<script type="text/javascript" charset="utf-8" src="https://cdn.jsdelivr.net/gh/PanDownloadServer/Server/Scripts/live2d.min.js"><\/script>')
       }</script>
     <script>var LAppDefine = {
